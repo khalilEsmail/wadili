@@ -1,0 +1,64 @@
+.hero{
+    padding-top: 100px;
+}
+
+.hero .flex-wrap{
+    align-items: center;
+}
+
+.hero .wrapper article:first-child{
+    /* display: flex; */
+    flex-basis: calc(100% / 2);
+    flex-grow: 1.5;
+
+}
+.hero .wrapper article:first-child > span:first-child {
+    color: var(--primary-blue);
+    font-weight: 300;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.hero .wrapper article:first-child h3{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    color: var(--primary-blue);
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.hero .wrapper article:first-child h3 span:nth-child(2) {
+  background: var(--gradiante-orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  /* display: inline-block; */
+ /* counter-reset: red; */
+}
+
+.hero .wrapper article:first-child p {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 1.6;
+    padding-right: 20%;
+    margin-bottom: 40px;
+}
+
+.hero .wrapper article + article{
+    position: relative;
+    flex-basis: calc(100% / 3);
+    flex-grow: 1;
+}
+.hero .wrapper article + article .layer-2{
+    position: relative;
+    z-index: 2;
+}
+.hero .wrapper article + article .layer-2 >img{
+    max-width: 90%;
+    margin-left: auto;
+}
+.hero .wrapper article + article .layer-1{
+ position: absolute;
+ right: 0;
+ z-index: -1;
+}

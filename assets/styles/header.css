@@ -1,0 +1,84 @@
+.header{
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.03); 
+    padding: 20px 0;
+}
+.header > .container{
+ display: flex;
+ align-items: center;
+
+}
+.header .brand{
+    flex-grow: 1;
+}
+
+.header .menu {
+    flex-grow: 2;
+}
+
+.header .lang-switcher {
+    flex-grow: 1;
+    align-self: center;
+    margin-left: auto;  
+    text-align: right;
+}
+.header .lang-switcher{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header .lang-switcher::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    right: 0;
+    /* top: 11px; */
+    background-image: url(../images/flag.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.header .lang-switcher select{
+    /* margin-left:  auto; */
+    border: none;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: var(--arabic-font);
+    position: relative;
+    padding-right: 25px;
+    font-size: 1rem;
+}
+/* .header .lang-switcher select::expand{
+    display: none;
+} */
+.header .brand >img{
+    max-width: 100%;
+    display: block;
+    /* margin: 0 auto; */
+    margin-right: auto;
+}
+
+.header .nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header .nav-menu li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header .nav-menu li > a{
+    text-decoration: none;
+    color:var(--primary-blue);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+

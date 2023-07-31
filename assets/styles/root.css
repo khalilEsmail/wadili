@@ -1,0 +1,38 @@
+:root{
+    --primary-orange:#FCA311;
+    --primary-blue:#14213D;
+    --gradiante-orange: linear-gradient(90deg, #FCA311 0%, #F9D423 100%); 
+    --pink:rgba(253, 165, 18, 0.10);
+    --transition-time:0.2s;
+    --border-raduis:15px;
+    --arabic-font:'SST Roman Arabic';
+
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-blue);
+    transition: color var(--transition-time) ease-in-out;
+}
+
+a:hover,a:active{
+  color: var(--primary-orange);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+h1,h3,h4,h5,h6,body,html{
+    margin: 0;
+    padding: 0;
+}

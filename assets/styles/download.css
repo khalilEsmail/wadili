@@ -1,0 +1,18 @@
+.download .title{
+ text-align: center;
+ font-size: 2rem;
+ text-transform: capitalize;
+ font-weight: bold;
+ color: var(--primary-blue);
+ margin-bottom: 50px;
+}
+
+.download .flex-wrap{
+    align-items: center;
+    justify-content: center;
+}
+
+.download .flex-wrap img:first-child
+{
+    margin-right: 30px;
+}

@@ -1,0 +1,39 @@
+.active-link{
+    color: var(--primary-orange);
+}
+
+.btn{
+    background: transparent;
+    font-size: 18px;
+    padding: 10px 25px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    border-radius: var(--border-raduis);
+    transition: color 0.2s ease-in-out , background 0.2s ease-in-out;
+}
+
+.btn-orange{
+    background: var(--gradiante-orange);
+    color: white;
+}
+
+.btn-orange:hover{ 
+    background: linear-gradient(90deg, #F9D423  0%, #FCA311 100%);
+    color: white;
+}
+
+.flex-wrap{
+    display: flex;
+}
+
+.clip-text{
+    background: var(--linear, linear-gradient(90deg, #FCA311 0%, #F9D423 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+}
+
+.section{
+    padding: 100px 0;
+}
